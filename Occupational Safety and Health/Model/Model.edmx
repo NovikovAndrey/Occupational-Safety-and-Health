@@ -54,7 +54,7 @@ warning 6002: The table/view 'OT.dbo.UsersView' does not have a primary key defi
           <Property Name="WriteSIZ" Type="Boolean" />
           <Property Name="CreateUsers" Type="Boolean" />
         </EntityType>
-        <EntityContainer Name="OTEntitiesTest" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="OTEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="UsersViews" EntityType="Self.UsersView" />
         </EntityContainer>
       </Schema>
@@ -62,7 +62,7 @@ warning 6002: The table/view 'OT.dbo.UsersView' does not have a primary key defi
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="OTModelStoreContainer" CdmEntityContainer="OTEntitiesTest">
+        <EntityContainerMapping StorageEntityContainer="OTModelStoreContainer" CdmEntityContainer="OTEntities">
           <EntitySetMapping Name="UsersViews">
             <EntityTypeMapping TypeName="OTModel.UsersView">
               <MappingFragment StoreEntitySet="UsersView">

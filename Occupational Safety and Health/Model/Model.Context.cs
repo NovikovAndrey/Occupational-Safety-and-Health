@@ -13,10 +13,10 @@ namespace Occupational_Safety_and_Health.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class OTEntitiesTest : DbContext
+    public partial class OTEntities : DbContext
     {
-        public OTEntitiesTest()
-            : base("name=OTEntitiesTest")
+        public OTEntities()
+            : base("name=OTEntities")
         {
         }
     
