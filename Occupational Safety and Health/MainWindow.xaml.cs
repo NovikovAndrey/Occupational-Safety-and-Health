@@ -20,9 +20,37 @@ namespace Occupational_Safety_and_Health
     /// </summary>
     public partial class MainWindow : Window
     {
+        OTEntitiesTest entitiesTest;
+        List<UsersView> t;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //ReadAsync();
+            t = await Task.Run(() => UsersAsync());
+
+            dgogrenci.ItemsSource = t;
+        }
+        //private async void ReadAsync()
+        //{
+        //      // выполняется асинхронно
+        //    dgogrenci.ItemsSource = t;
+        //}
+        static List<UsersView> UsersAsync()
+        {
+            OTEntitiesTest entitiesTest;
+            List<UsersView> t;
+            entitiesTest = new OTEntitiesTest();
+            t = entitiesTest.UsersViews.ToList();
+            return t;
+        }
+
+        private void Window_Initialized(object sender, EventArgs e)
+        {
+            //ReadAsync();
         }
     }
 }
