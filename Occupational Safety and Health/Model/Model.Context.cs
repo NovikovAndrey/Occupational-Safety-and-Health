@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Occupational_Safety_and_Health
+namespace Occupational_Safety_and_Health.Model
 {
     using System;
     using System.Data.Entity;
