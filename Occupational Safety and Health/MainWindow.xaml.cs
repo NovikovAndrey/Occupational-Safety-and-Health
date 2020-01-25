@@ -29,16 +29,11 @@ namespace Occupational_Safety_and_Health
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //ReadAsync();
+            // Вызов в асинхроне и заполнение коллекции
             t = await Task.Run(() => UsersAsync());
-
             dgogrenci.ItemsSource = t;
         }
-        //private async void ReadAsync()
-        //{
-        //      // выполняется асинхронно
-        //    dgogrenci.ItemsSource = t;
-        //}
+
         static List<UsersView> UsersAsync()
         {
             OTEntitiesTest entitiesTest;
@@ -50,7 +45,6 @@ namespace Occupational_Safety_and_Health
 
         private void Window_Initialized(object sender, EventArgs e)
         {
-            //ReadAsync();
         }
     }
 }
