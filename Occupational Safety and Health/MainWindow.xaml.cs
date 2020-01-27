@@ -28,5 +28,10 @@ namespace Occupational_Safety_and_Health
         {
             
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
