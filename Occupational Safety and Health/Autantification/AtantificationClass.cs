@@ -9,13 +9,13 @@ namespace Occupational_Safety_and_Health.Autantification
 {
     class AtantificationClass
     {
-        OTEntities entities;
-        List<UsersView> t;
+        private OTEntities entities;
+        private List<UsersView> usersViews;
         private List<UsersView> UsersAsync(Progress<List<UsersView>> progress)
         {
             entities = new OTEntities();
-            t = entities.UsersViews.ToList();
-            return t;
+            usersViews = entities.UsersViews.ToList();
+            return usersViews;
         }
         public async void GetUsers(System.Windows.Controls.ComboBox loginsComboBox)
         {

@@ -7,13 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Initialized="Window_Initialized">
     <Grid>
-        <DataGrid Name="dgogrenci" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="185" Margin="22,37,0,0" VerticalAlignment="Top" Width="246">
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Login}" Header="ID" Width="*"/>
-                <DataGridTextColumn Binding="{Binding Password}" Header="First Name" Width="3*"/>
-                <DataGridTextColumn Binding="{Binding Otd}" Header="Last Name" Width="3*" />
-            </DataGrid.Columns>
-        </DataGrid>
         <ComboBox x:Name="LoginsComboBox" HorizontalAlignment="Left" Margin="375,124,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

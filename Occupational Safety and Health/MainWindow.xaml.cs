@@ -12,12 +12,11 @@ namespace Occupational_Safety_and_Health
     /// </summary>
     public partial class MainWindow : Window
     {
-        //OTEntitiesTest entitiesTest;
-        //List<UsersView> t;
-        readonly Autantification.AtantificationClass tt = new Autantification.AtantificationClass();
+        readonly Autantification.AtantificationClass atantificationUsers = new Autantification.AtantificationClass();
         public MainWindow()
         {
             InitializeComponent();
+            atantificationUsers.GetUsers(LoginsComboBox);
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
@@ -27,7 +26,7 @@ namespace Occupational_Safety_and_Health
 
         private async void Window_Initialized(object sender, EventArgs e)
         {
-            tt.GetUsers(LoginsComboBox);
+            
         }
     }
 }
