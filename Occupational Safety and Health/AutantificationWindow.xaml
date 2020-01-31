@@ -18,7 +18,7 @@
             </DockPanel>
             <DockPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
                 <Button DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Bottom" MinWidth="100" MinHeight="30" Content="Выход" IsCancel="True" Click="Button_Click" FontSize="16" FontWeight="Bold"/>
-                <Button DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="100" MinHeight="30" Content="Вход" IsDefault="True" FontSize="16" FontWeight="Bold"/>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinWidth="100" MinHeight="30" Content="Вход" IsDefault="True" FontSize="16" FontWeight="Bold" Click="Button_Click_1"/>
             </DockPanel>
         </DockPanel>
     </Grid>

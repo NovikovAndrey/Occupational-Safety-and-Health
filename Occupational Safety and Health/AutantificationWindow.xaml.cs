@@ -33,5 +33,12 @@ namespace Occupational_Safety_and_Health
         {
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window window = new Work.MainWorkWindow();
+            window.Show();
+            this.Close();
+        }
     }
 }
