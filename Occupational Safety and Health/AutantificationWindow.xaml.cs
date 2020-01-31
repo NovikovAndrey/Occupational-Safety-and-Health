@@ -36,10 +36,7 @@ namespace Occupational_Safety_and_Health
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
-            Window window = new Work.MainWorkWindow();
-            window.Show();
-            this.Close();
+            autantificationUsers.Check(LoginsComboBox.SelectedItem, PasswordBox.Password, this);
         }
     }
 }

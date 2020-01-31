@@ -22,7 +22,7 @@ namespace Occupational_Safety_and_Health.Work
     public partial class MainWorkWindow : Window
     {
         
-        public MainWorkWindow()
+        public MainWorkWindow(UsersView selectedUser)
         {
             InitializeComponent();
         }
@@ -38,8 +38,8 @@ namespace Occupational_Safety_and_Health.Work
             var tt = new MyPerson();
             
             //tt.KodPred
-            var t2Vvods = UsersAsync();
-            TestLB.ItemsSource = t2Vvods;
+            //var t2Vvods = UsersAsync();
+            //TestLB.ItemsSource = t2Vvods;
             ////T2Vvod t2Vvod = new T2Vvod();
             ////var t = t2Vvod.lo;
         }

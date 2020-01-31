@@ -14,7 +14,7 @@
             </DockPanel>
             <DockPanel DockPanel.Dock="Top">
                 <Label Content="Password" DockPanel.Dock="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" MinHeight="35" FontSize="16" FontWeight="Bold" MinWidth="100"/>
-                <PasswordBox DockPanel.Dock="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinWidth="100" MinHeight="35" FontSize="16"/>
+                <PasswordBox x:Name="PasswordBox" DockPanel.Dock="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinWidth="100" MinHeight="35" FontSize="16"/>
             </DockPanel>
             <DockPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom">
                 <Button DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Bottom" MinWidth="100" MinHeight="30" Content="Выход" IsCancel="True" Click="Button_Click" FontSize="16" FontWeight="Bold"/>
