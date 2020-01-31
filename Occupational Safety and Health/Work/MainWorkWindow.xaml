@@ -43,6 +43,30 @@
             <DockPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
                 
             </DockPanel>
+            <Button Content="Button" Height="419" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <ListBox x:Name="TestLB" Grid.Row="1" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Gray" BorderThickness="1">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Path=FIO}" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Path=KodDolj}" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Path=KodPred}" />
+                                
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
 
         </DockPanel>
     </Grid>

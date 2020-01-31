@@ -26,5 +26,36 @@ namespace Occupational_Safety_and_Health.Model
         }
     
         public virtual DbSet<UsersView> UsersViews { get; set; }
+        public virtual DbSet<AdministrativePunishment> AdministrativePunishments { get; set; }
+        public virtual DbSet<BonusPunishment> BonusPunishments { get; set; }
+        public virtual DbSet<CompositionSIZ> CompositionSIZs { get; set; }
+        public virtual DbSet<NameTemplate> NameTemplates { get; set; }
+        public virtual DbSet<OtdelInformation> OtdelInformations { get; set; }
+        public virtual DbSet<PeriodYear> PeriodYears { get; set; }
+        public virtual DbSet<Photo> Photos { get; set; }
+        public virtual DbSet<Privilege> Privileges { get; set; }
+        public virtual DbSet<ReadySIZ> ReadySIZs { get; set; }
+        public virtual DbSet<ReadyTemplate> ReadyTemplates { get; set; }
+        public virtual DbSet<RegisteredPC> RegisteredPCs { get; set; }
+        public virtual DbSet<SIZName> SIZNames { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<T2Dolj> T2Dolj { get; set; }
+        public virtual DbSet<T2Otdel> T2Otdel { get; set; }
+        public virtual DbSet<T2Vvod> tt { get; set; }
+        public virtual DbSet<TermUseSIZ> TermUseSIZs { get; set; }
+        public virtual DbSet<TypesDeffSIZ> TypesDeffSIZs { get; set; }
+        public virtual DbSet<TypesMO> TypesMOes { get; set; }
+        public virtual DbSet<TypesOT> TypesOTs { get; set; }
+        public virtual DbSet<TypesViolation> TypesViolations { get; set; }
+        public virtual DbSet<UserAccess> UserAccesses { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UsersMO> UsersMOes { get; set; }
+        public virtual DbSet<UsersOT> UsersOTs { get; set; }
+        public virtual DbSet<UsersSIZ> UsersSIZs { get; set; }
+        public virtual DbSet<UsersTemplate> UsersTemplates { get; set; }
+        public virtual DbSet<UsersViolation> UsersViolations { get; set; }
+        public virtual DbSet<UserTemplateHistory> UserTemplateHistories { get; set; }
+        public virtual DbSet<Сompany> Сompany { get; set; }
+        public virtual DbSet<Otd> Otds { get; set; }
     }
 }
