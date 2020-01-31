@@ -6,6 +6,69 @@
     <edmx:Diagrams>
       <Diagram DiagramId="a807d317f3e8409dbd7187ada5d9ff80" Name="Diagram1">
         <EntityTypeShape EntityType="OTModel.UsersView" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OTModel.AdministrativePunishment" Width="1.5" PointX="14.25" PointY="25.5" />
+        <EntityTypeShape EntityType="OTModel.BonusPunishment" Width="1.5" PointX="14.25" PointY="23.125" />
+        <EntityTypeShape EntityType="OTModel.CompositionSIZ" Width="1.5" PointX="3.75" PointY="22.5" />
+        <EntityTypeShape EntityType="OTModel.NameTemplate" Width="1.5" PointX="6" PointY="25" />
+        <EntityTypeShape EntityType="OTModel.OtdelInformation" Width="1.5" PointX="8.25" PointY="22.625" />
+        <EntityTypeShape EntityType="OTModel.PeriodYear" Width="1.5" PointX="3.75" PointY="12.75" />
+        <EntityTypeShape EntityType="OTModel.Photo" Width="1.5" PointX="10.5" PointY="38.375" />
+        <EntityTypeShape EntityType="OTModel.Privilege" Width="1.5" PointX="9" PointY="6.875" />
+        <EntityTypeShape EntityType="OTModel.ReadySIZ" Width="1.5" PointX="6" PointY="4" />
+        <EntityTypeShape EntityType="OTModel.ReadyTemplate" Width="1.5" PointX="8.25" PointY="2.875" />
+        <EntityTypeShape EntityType="OTModel.RegisteredPC" Width="1.5" PointX="8.25" PointY="19.875" />
+        <EntityTypeShape EntityType="OTModel.SIZName" Width="1.5" PointX="3.75" PointY="10.5" />
+        <EntityTypeShape EntityType="OTModel.sysdiagram" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OTModel.T2Dolj" Width="1.5" PointX="6" PointY="12.125" />
+        <EntityTypeShape EntityType="OTModel.T2Otdel" Width="1.5" PointX="6" PointY="15.5" />
+        <EntityTypeShape EntityType="OTModel.T2Vvod" Width="1.5" PointX="8.25" PointY="14.875" />
+        <EntityTypeShape EntityType="OTModel.TermUseSIZ" Width="1.5" PointX="3.75" PointY="20.125" />
+        <EntityTypeShape EntityType="OTModel.TypesDeffSIZ" Width="1.5" PointX="3.75" PointY="8.125" />
+        <EntityTypeShape EntityType="OTModel.TypesMO" Width="1.5" PointX="8.25" PointY="25.125" />
+        <EntityTypeShape EntityType="OTModel.TypesOT" Width="1.5" PointX="11.25" PointY="10.125" />
+        <EntityTypeShape EntityType="OTModel.TypesViolation" Width="1.5" PointX="14.25" PointY="8.75" />
+        <EntityTypeShape EntityType="OTModel.UserAccess" Width="1.5" PointX="13.5" PointY="15.875" />
+        <EntityTypeShape EntityType="OTModel.User" Width="1.5" PointX="11.25" PointY="6.875" />
+        <EntityTypeShape EntityType="OTModel.UsersMO" Width="1.5" PointX="10.5" PointY="19.875" />
+        <EntityTypeShape EntityType="OTModel.UsersOT" Width="1.5" PointX="13.5" PointY="11.875" />
+        <EntityTypeShape EntityType="OTModel.UsersSIZ" Width="1.5" PointX="10.5" PointY="15.75" />
+        <EntityTypeShape EntityType="OTModel.UsersTemplate" Width="1.5" PointX="10.5" PointY="13" />
+        <EntityTypeShape EntityType="OTModel.UsersViolation" Width="1.5" PointX="16.5" PointY="15.5" />
+        <EntityTypeShape EntityType="OTModel.UserTemplateHistory" Width="1.5" PointX="13.5" PointY="19.875" />
+        <EntityTypeShape EntityType="OTModel.Сompany" Width="1.5" PointX="3.75" PointY="16" />
+        <EntityTypeShape EntityType="OTModel.Otd" Width="1.5" PointX="0.75" PointY="4.75" />
+        <AssociationConnector Association="OTModel.FK_UsersViolations_AdministrativePunishment" />
+        <AssociationConnector Association="OTModel.FK_UsersViolations_BonusPunishment" />
+        <AssociationConnector Association="OTModel.FK_ReadySIZs_CompositionSIZ" />
+        <AssociationConnector Association="OTModel.FK_ReadyTemplates_NameTemplates" />
+        <AssociationConnector Association="OTModel.FK_OtdelInformation_T2Otdel" />
+        <AssociationConnector Association="OTModel.FK_ReadySIZs_PeriodYear" />
+        <AssociationConnector Association="OTModel.FK_Photo_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_Users_Privilege" />
+        <AssociationConnector Association="OTModel.FK_ReadySIZs_SIZNames" />
+        <AssociationConnector Association="OTModel.FK_ReadySIZs_TermUseSIZ" />
+        <AssociationConnector Association="OTModel.FK_ReadySIZs_TypesDeffSIZ" />
+        <AssociationConnector Association="OTModel.FK_ReadyTemplates_ReadySIZs" />
+        <AssociationConnector Association="OTModel.FK_UsersSIZ_ReadySIZs" />
+        <AssociationConnector Association="OTModel.FK_UsersTemplate_ReadyTemplates" />
+        <AssociationConnector Association="OTModel.FK_UserTemplateHistory_ReadyTemplates" />
+        <AssociationConnector Association="OTModel.FK_RegisteredPC_T2Otdel" />
+        <AssociationConnector Association="OTModel.FK_T2Vvod_T2Dolj" />
+        <AssociationConnector Association="OTModel.FK_T2Otdel_Companys" />
+        <AssociationConnector Association="OTModel.FK_T2Vvod_T2Otdel" />
+        <AssociationConnector Association="OTModel.FK_UserAccess_T2Otdel" />
+        <AssociationConnector Association="OTModel.FK_T2Vvod_Сompany" />
+        <AssociationConnector Association="OTModel.FK_UserAccess_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersMO_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersOT_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersSIZ_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersTemplate_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersViolations_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UserTemplateHistory_T2Vvod" />
+        <AssociationConnector Association="OTModel.FK_UsersMO_TypesMO" />
+        <AssociationConnector Association="OTModel.FK_UsersOT_TypesOT" />
+        <AssociationConnector Association="OTModel.FK_UsersViolations_TypesViolations" />
+        <AssociationConnector Association="OTModel.FK_UserAccess_Users" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
