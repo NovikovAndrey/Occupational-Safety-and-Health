@@ -70,7 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Autantification\AtantificationClass.cs" />
+    <Compile Include="Autantification\AutantificationClass.cs" />
     <Compile Include="Model\AdministrativePunishment.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

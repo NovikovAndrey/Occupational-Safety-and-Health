@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Occupational_Safety_and_Health.Autantification
 {
-    class AtantificationClass
+    class AutantificationClass
     {
         private OTEntities entities;
         private List<UsersView> usersViews;

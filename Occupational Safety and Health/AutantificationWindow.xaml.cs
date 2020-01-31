@@ -12,11 +12,11 @@ namespace Occupational_Safety_and_Health
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly Autantification.AtantificationClass atantificationUsers = new Autantification.AtantificationClass();
+        readonly Autantification.AutantificationClass autantificationUsers = new Autantification.AutantificationClass();
         public MainWindow()
         {
             InitializeComponent();
-            atantificationUsers.GetUsers(LoginsComboBox);
+            autantificationUsers.GetUsers(LoginsComboBox);
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
@@ -36,6 +36,7 @@ namespace Occupational_Safety_and_Health
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            
             Window window = new Work.MainWorkWindow();
             window.Show();
             this.Close();
