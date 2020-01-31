@@ -6,68 +6,8 @@
         xmlns:local="clr-namespace:Occupational_Safety_and_Health.Work"
         mc:Ignorable="d"
         Title="MainWorkWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="expandAreaStyle" TargetType="{x:Type Border}">
-            <Setter Property="Margin" Value="0 0 150 0"/>
-            <Style.Triggers>
-                <DataTrigger Binding="{Binding IsChecked, ElementName=expandButton}" Value="True">
-                    <DataTrigger.EnterActions>
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetProperty="Margin">
-                                <ThicknessAnimation To="0 0 0 0" Duration="0:0:0.2"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </DataTrigger.EnterActions>
-                    <DataTrigger.ExitActions>
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetProperty="Margin">
-                                <ThicknessAnimation To="0 0 150 0" Duration="0:0:0.2"/>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </DataTrigger.ExitActions>
-                </DataTrigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
+   
     <Grid>
-        <DockPanel>
-            <DockPanel DockPanel.Dock="Right" Width="200" >
-                <Image DockPanel.Dock="Top" Height="200" VerticalAlignment="Top" />
-                <StackPanel Orientation="Vertical">
-                    <DockPanel>
-                        <Label DockPanel.Dock="Left" Content="kkkkk" HorizontalAlignment="Left"/>
-                        <Label DockPanel.Dock="Right" Content="kjjhhh" HorizontalAlignment="Right"/>
-                    </DockPanel>
-                </StackPanel>
-            </DockPanel>
-            <DockPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
-                
-            </DockPanel>
-            <Button Content="Button" Height="419" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-            <ListBox x:Name="TestLB" Grid.Row="1" >
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Border BorderBrush="Gray" BorderThickness="1">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Path=FIO}" TextWrapping="Wrap" />
-                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Path=KodDolj}" />
-                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Path=KodPred}" />
-                                
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-
-        </DockPanel>
+        
     </Grid>
 </Window>
